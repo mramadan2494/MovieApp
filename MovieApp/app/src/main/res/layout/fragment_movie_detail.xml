@@ -1,0 +1,132 @@
+
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d1c07b"
+    tools:context="com.example.android.movieapp.MovieDetailActivity$PlaceholderFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fillViewport="true"
+        android:id="@+id/scrollview2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#b71d41"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:id="@+id/text_title"
+                android:paddingLeft="20dp"
+
+                />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:id="@+id/image_ratingLayout"
+                >
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="270dp"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/image_poster"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+
+                        android:textSize="15dp"
+                        android:id="@+id/text_date"
+                        />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:id="@+id/text_rate"
+
+                        />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/favorite_button"
+                        android:visibility="invisible"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:id="@+id/text_overview"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        >
+        <ExpandableListView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:id="@+id/expandableList_movie" >
+
+        </ExpandableListView>
+    </LinearLayout>
+
+
+</LinearLayout>
